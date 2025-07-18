@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+/*1rem=16px*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Oswald", sans-serif;
+    color: black;
+}
+
+/*Utility class*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header Start*/
+#header {
+    position: fixed;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+#header .navbar .logo {
+    width: 300px;
+}
+
+#header .navbar .toggler{
+    margin: 15px 40px;
+   display: none;
+}
+
+#header .navbar .toggler i {
+    color: black;
+    font-size: 30px;
+
+}
+#header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    height: 90px;
+
+}
+
+
+
+#header .navbar ul {
+    list-style: none;
+    display: flex;
+
+}
+
+#header .navbar ul a {
+    text-decoration: none;
+    color: darkgray;
+    font-weight: 500px;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+#header .navbar ul a:hover {
+    color: #c7a17a;
+
+}
+
+/* Header End*/
+
+/* Home Start*/
+#home {
+    background: url(../img/home-bg.png) center no-repeat;
+    background-size: 100%;
+    background-color: #f1f1f1;
+
+}
+
+#home .home-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+    gap: 3rem;
+    align-items: center;
+
+}
+
+#home .home-content .content-text h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#home .home-content .content-text h1 {
+    font-size: 80px;
+    margin: 20px 0px;
+    line-height: 1.3;
+    color: #333;
+}
+
+#home .home-content .content-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#home .home-content .content-text .btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #c7a17a;
+    padding: 15px 25px;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#home .home-content .content-text .btn i {
+    margin-left: 5px;
+}
+
+#home .home-content .content-text .btn:hover {
+    background-color: #333;
+
+}
+
+#home .home-content img {
+    display: block;
+    width: 100%;
+
+}
+
+/* Home End*/
+
+/*About Start*/
+.text-primary {
+    color: #c7a17a;
+}
+
+#About {
+    padding: 6rem 0rem;
+
+}
+
+#About .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+#About .row .About-content h2 {
+    /* بنعمل الحروف كابيتال*/
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+
+
+}
+
+#About .row .About-content .item {
+    margin: 2rem 0rem;
+
+}
+
+#About .row .About-content .item h3 {
+    margin-bottom: 5px;
+}
+
+
+/*About End*/
+
+/*Menu Start*/
+
+#Menu {
+    background-color: #fbfbfb;
+    padding: 6rem 0rem;
+    text-align: center;
+}
+
+#Menu .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 0rem;
+    gap: 5rem;
+    align-items: center;
+}
+
+#Menu .row .col .item {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+    border: 1px solid #ddd;
+    padding: 25px 20px;
+}
+
+#Menu .row .col .item img {
+    width: 80px;
+    margin-left: -50px;
+}
+
+#Menu .row .col .item .details {
+    margin-left: 20px;
+}
+
+#Menu .row .col .item .details h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#Menu .row .col .item .details p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#Menu .row .col .item .price {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin: auto;
+
+}
+
+#Menu .row .col .item .price p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.heading span {
+    font-size: 18px;
+}
+
+.heading h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/*Menu End*/
+/*Start Testimonials*/
+
+#Testimonials {
+
+    padding: 6rem 0rem;
+    text-align: center;
+
+}
+
+#Testimonials .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 6rem;
+    gap: 2.5rem;
+}
+
+#Testimonials .row .item {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 25px 25px 35px;
+
+
+}
+
+#Testimonials .row .item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#Testimonials .row .item h3 {
+    margin: 20px 0px 10px;
+
+}
+
+#Testimonials .row .item p {
+    line-height: 1.6;
+
+}
+
+/*End Testimonials*/
+
+/*Contact Start*/
+
+#Contact {
+    padding: 6rem 0rem;
+    text-align: center;
+    background-color: #f1f1f1;
+
+}
+
+#Contact .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1.4fr);
+    margin-top: 2rem;
+
+}
+
+#Contact .row .Contact-content {
+    background-color: #fff;
+    padding: 2.5rem;
+
+}
+
+#Contact .row .Contact-content h3 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#Contact .row .Contact-content form input {
+    display: block;
+    width: 100%;
+    margin: 15px 0px;
+    border: 1px solid #ccc;
+}
+
+#Contact .row .Contact-content form textarea {
+    display: block;
+    width: 100%;
+    margin: 15px 0px;
+    border: 1px solid #ccc;
+
+}
+
+#Contact .row .Contact-content form .btn-submit {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#Contact .row .Contact-content form .btn-submit:hover {
+    background-color: #c7a17a;
+}
+
+#Contact .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*Contact End*/
+/*Footer Start*/
+
+#footer .footer-top {
+    padding: 6rem 0rem;
+    background: url(../img/footer-bg.png);
+    color: #fff;
+
+}
+
+#footer .footer-top .row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 6rem;
+}
+
+#footer .footer-top .col h3 {
+    color: #fff;
+    margin-bottom: 15px;
+
+}
+#footer .footer-top .col p{
+margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#footer .footer-top .col ul li i {
+    margin-right: 10px;
+
+}
+
+#footer .footer-top .col ul li a {
+    color: #fff;
+}
+
+#footer .copyright {
+    background-color: #333;
+    padding: 30px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+#footer .copyright p a {
+    color: #fff;
+}
+
+#footer .copyright p a:hover {
+    color: #c7a17a;
+}
+
+/* شاشات متوسطة - تابلت */
+@media (max-width: 992px) {
+    #header .navbar .logo{
+        width: 250px;
+        margin: 10px;
+    }
+    #header .navbar .toggler {
+        display: none;
+        color: black;
+    }
+    #home .home-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 100px;
+    }
+    #home .home-content img{
+        width: 550px;
+        align-items: center;
+        background-position: center;
+      margin-left: 17%;
+    
+    }
+    #home .home-content .content-text h3 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    #home .home-content .content-text h1 {
+        font-size: 70px;
+        margin: 20px 0px;
+        line-height: 1.3;
+        color: #333;
+    }
+    
+    #home .home-content .content-text p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    #home .home-content .content-text .btn {
+        display: inline-block;
+        margin-top: 2rem;
+        background-color: #c7a17a;
+        padding: 15px 25px;
+        color: #fff;
+        border-radius: 30px;
+        transition: all 0.3s;
+    margin-bottom: 15px;}
+#home{
+    width: 100%;
+}
+    #About .row,
+    #Menu .row,
+    #Contact .row {
+        grid-template-columns: 1fr;
+
+    }
+
+    #Testimonials .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #footer .footer-top .row {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 10%;
+    }
+
+    #home .home-content img {
+        order: -1; /* الصورة تطلع فوق في الموبايل */
+   }
+   #About .row{
+    margin-left: 20px;
+    text-align: center;
+   }
+   #About .row img{ margin: 0;
+    width: 450px;
+    align-items: center;
+    background-position: center;
+  margin-left: 24%;
+
+
+   }
+   #Menu .row .col .item {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid #ddd;
+    padding: 25px 20px;
+
+
+}
+
+/* شاشات صغيرة - موبايل */
+@media (max-width: 576px) {
+
+ #header .navbar .logo{
+        width: 150px;
+        margin: 10px;
+    }
+    #header .navbar ul {
+        display: none;
+    }
+    #header .navbar .toggler i {
+        color: black;
+        font-size: 30px;
+        margin: 10px;
+    
+    }
+    #header .navbar .toggler {
+        display: block;
+        color: black;
+    }
+    #home .home-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 100px;
+    }
+    #home .home-content img{
+        width: 250px;
+        align-items: center;
+        background-position: center;
+      margin-right: 15%px;
+    
+    }
+    #home .home-content .content-text h3 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    #home .home-content .content-text h1 {
+        font-size: 40px;
+        margin: 20px 0px;
+        line-height: 1.3;
+        color: #333;
+    }
+    
+    #home .home-content .content-text p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    
+    #home .home-content .content-text .btn {
+        display: inline-block;
+        margin-top: 2rem;
+        background-color: #c7a17a;
+        padding: 15px 25px;
+        color: #fff;
+        border-radius: 30px;
+        transition: all 0.3s;
+    margin-bottom: 10px;}
+    #home .home-content h1 {
+        font-size: 40px;
+    }
+#home{
+    width: 100%;
+}
+    #About .row,
+    #Menu .row,
+    #Testimonials .row,
+    #Contact .row,
+    #footer .footer-top .row {
+        grid-template-columns: 1fr;
+    }
+
+    #Menu .row .col .item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Menu .row .col .item img {
+        margin: 0;
+        
+    }
+    #About .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #About .row  img {
+         margin: 0;
+        width: 250px;
+        align-items: center;
+        background-position: center;
+      margin-left: 15%;
+
+    }
+
+    #footer .footer-top .col p {
+        width: 100%;
+    }
+
+    .heading h2 {
+        font-size: 28px;
+    }
+
+    #Contact .row .Contact-content form input,
+    #Contact .row .Contact-content form textarea {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #Contact .row .Contact-content {
+        padding: 1rem;
+    }
+
+    #Testimonials .row {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+}
+/*Footer End*/
